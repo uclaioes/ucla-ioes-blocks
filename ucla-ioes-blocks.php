@@ -25,10 +25,10 @@ add_action( 'enqueue_block_editor_assets', 'ucla_ioes_blocks_plugin_deny_list_bl
 /* filter to disable blocks by custom post types 
 https://developer.wordpress.org/reference/functions/use_block_editor_for_post_type/
 */
-add_filter('use_block_editor_for_post_type', 'ucla_ioes_disable_gutenberg', 10, 2);
-function ucla_ioes_disable_gutenberg($current_status, $post_type)
-{
-    // Use your post type key
-    if ($post_type === 'articles') return false;
-    return $current_status;
-}
+// add_filter('use_block_editor_for_post_type', 'ucla_ioes_disable_gutenberg', 10, 2);
+// function ucla_ioes_disable_gutenberg($current_status, $post_type)
+// {
+//     // Use your post type key
+//     if ($post_type === 'articles') return false;
+//     return $current_status;
+// }
